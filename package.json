@@ -1,0 +1,53 @@
+{
+  "name": "dsh-chang-kaishen",
+  "version": "0.1.0",
+  "description": "常凯申挂件：挂在 DSH 窗口边上的凯申显示器。显示金元券余额、经典台词，按循环时长逐步捣乱，最后把 DSH 窗口变成凯申大头像。",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.png"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.png",
+    "assets/reward-qr.png",
+    "PROVENANCE.md",
+    "assets/qban-cutout.png",
+    "assets/gold-yuan-front.png",
+    "assets/target-meme.png",
+    "assets/target-meme-weights.png",
+    "assets/html2canvas.min.js"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "widget",
+    "pet",
+    "prank",
+    "meme",
+    "changkai-shek"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/666666fine-png/dsh-chang-kaishen.git"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,5 @@
+# dsh-chang-kaishen bundle patch
+# 安装后由 DSH 插件管理器把本插件插入当前 profile。
+- insert:
+    - id: chang-kaishen
+      name: dsh-chang-kaishen
